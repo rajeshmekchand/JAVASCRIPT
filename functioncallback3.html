@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          function demo(k){
+        var x=parseInt(prompt());
+        var y=parseInt(prompt());
+           let p=k(x,y);
+           alert(p);
+       }
+       
+       demo( function test(x,y){
+            var p=x%y;
+            return p;
+        })
+    </script>
+</body>
+</html>

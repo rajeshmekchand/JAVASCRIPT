@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="table()">Click by</button>
+    <p id="table"></p>
+    <script>
+     function table(){
+         var text=''
+         var t1=prompt("Enter a number");
+        for(let i=1; i<=10; i++ ){
+             text = text+"<br>"+t1*i;
+        }
+        var k= document.getElementById("table").innerHTML= text;
+        k.fontsize='5px';
+        k.style.color="red";
+        
+     }
+
+    </script>
+</body>
+</html>

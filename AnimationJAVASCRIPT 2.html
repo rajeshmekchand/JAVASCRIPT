@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onmouseover="fun()">click me</button>
+    <div id="p"></div>
+    <script>
+        function fun(){
+            let k= document.getElementById('p')
+            k.animate([{ height: '4cm', width:'4cm', border:'2px solid red'    },{height: '14cm', width:'14cm', background:' yellow' }] ,{ iterations :Infinity, duration:5000})
+        }
+    </script>
+</body>
+</html>
